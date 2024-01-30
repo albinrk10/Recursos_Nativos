@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:permission_handler/permission_handler.dart';
-import '../../../provider/provider.dart';
+import '../../provider/provider.dart';
 
 
 class PermissionsScreen extends StatelessWidget {
