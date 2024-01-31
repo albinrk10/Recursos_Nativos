@@ -13,3 +13,4 @@ export 'sensors/magnetometer_screen.dart';
 //pokemons
 
 export 'pokemons/pokemons_screen.dart';
+export 'pokemons/pokemon_screen.dart';
