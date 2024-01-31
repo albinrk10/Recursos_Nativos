@@ -17,3 +17,4 @@ export 'sensors/magnetometer_provider.dart';
 
 //pokemon
 export 'pokemons/pokemons_list_provider.dart';
+export 'pokemons/pokemon_provider.dart';
