@@ -6,8 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
     inactive
     paused
     detached
-    */
-    
+*/ 
 final appStateProvider = StateProvider<AppLifecycleState>((ref) {
   return AppLifecycleState.resumed;
 });

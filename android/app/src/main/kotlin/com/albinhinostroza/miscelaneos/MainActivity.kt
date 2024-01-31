@@ -1,4 +1,4 @@
-package com.example.miscelaneos
+package com.albinhinostroza.miscelaneos
 
 import io.flutter.embedding.android.FlutterActivity
 
