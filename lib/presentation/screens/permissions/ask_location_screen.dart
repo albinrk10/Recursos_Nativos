@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../provider/provider.dart';
+import 'package:miscelaneos/presentation/providers/providers.dart';
+
 
 class AskLocationScreen extends ConsumerWidget {
-  const AskLocationScreen({Key? key}) : super(key: key);
+  const AskLocationScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return  Scaffold(
+  Widget build(BuildContext context, ref ) {
+
+    return Scaffold(
       appBar: AppBar(
         title: const Text('Permiso Requerido'),
       ),
