@@ -62,6 +62,3 @@ class MainAppState extends ConsumerState<MainApp> with WidgetsBindingObserver {
   }
 }
 
-(String , int) getStringAndInt(){
-  return ('hola', 1);
-}
