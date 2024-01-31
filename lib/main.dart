@@ -54,6 +54,7 @@ class MainAppState extends ConsumerState<MainApp> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      
       routerConfig: router,
       theme: AppTheme().getTheme(),
       debugShowCheckedModeBanner: false,
