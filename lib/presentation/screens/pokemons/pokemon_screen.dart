@@ -36,7 +36,7 @@ class _PokemonView extends StatelessWidget {
               onPressed: () {
                 //Link = Deeplink
                 SharedPlugin.sharedLink(
-                  pokemon.spriteFront, 'Mira este pokemon'
+                  'https://pokemons-deep-linking.up.railway.app/pokemons/${pokemon.id}/', 'Mira este pokemon'
                 );
               },
             )
