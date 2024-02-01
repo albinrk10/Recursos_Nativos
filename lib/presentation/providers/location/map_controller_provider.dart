@@ -86,10 +86,10 @@ class MapNotifier extends StateNotifier<MapState> {
     if (lastKnownLocation == null) return;
 
     final (latitude, longitude) = lastKnownLocation!;
-    addMaker(latitude, longitude, 'Por aqui paso el Usuario');
+    addMarker(latitude, longitude, 'Por aqui paso el Usuario');
   }
 
-  void addMaker(double latitude, double longitude, String name) {
+  void addMarker(double latitude, double longitude, String name) {
     final newmarker = Marker(
       markerId: MarkerId('${state.markers.length}'),
       position: LatLng(latitude, longitude),

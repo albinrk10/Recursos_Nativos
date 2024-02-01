@@ -127,7 +127,7 @@ class __MapViewState extends ConsumerState<_MapView> {
       },
       
       onLongPress: (latLng) {
-        ref.read(mapControllerProvider.notifier).addMaker(latLng.latitude, latLng.longitude , 'Nuevo marcador');
+        ref.read(mapControllerProvider.notifier).addMarker(latLng.latitude, latLng.longitude , 'Nuevo marcador');
         
       },
     );
