@@ -42,9 +42,9 @@ class LocalAuthState {
 class LocalAuthNotifier extends StateNotifier<LocalAuthState> {
   LocalAuthNotifier() : super(LocalAuthState());
 
-  Future<(bool, String)> authenticateUser() async {
+  Future<(bool, String)> authenticateUser({ bool biometricOnly = false}) async {
 
-    final (didAuthenticate, message) = await LocalAuthPlugin.authenticate();
+    final (didAuthenticate, message) = await LocalAuthPlugin.authenticate(biometricOnly : biometricOnly);
 
     state = state.copyWith(
       didAuthenticate: didAuthenticate,

@@ -24,14 +24,14 @@ class LocalAuthPlugin {
     return await auth.canCheckBiometrics;
   }
 
-  static Future<(bool, String)> authenticate() async {
+  static Future<(bool, String)> authenticate({bool biometricOnly = false}) async {
 
     try {
       final bool didAuthenticate = await auth.authenticate(
     localizedReason: 'Por favor autentiquese para continuar',
-    options: const AuthenticationOptions(
-      biometricOnly: true
-      // biometricOnly: true // false podemos colocar el pin 
+    options:  AuthenticationOptions(
+      biometricOnly: biometricOnly
+      // biometricOnly: true //  podemos true colocar el pin 
       ));
       return (didAuthenticate, didAuthenticate ? 'Hecho': 'Cancelado por usuario');
     } on PlatformException catch (e) {
