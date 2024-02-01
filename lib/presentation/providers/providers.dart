@@ -21,3 +21,7 @@ export 'pokemons/pokemon_provider.dart';
 
 //!biometrics
 export 'local_auth/local_auth_providers.dart';
+
+//!location
+export 'location/user_location_provider.dart';
+export 'location/watch_location_provider.dart';

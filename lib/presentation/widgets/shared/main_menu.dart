@@ -16,8 +16,14 @@ final menuItems = <MenuItem>[
   
   MenuItem('Giróscopio Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Brújula', Icons.explore, '/compass'),
+  //pokemons
   MenuItem('Pokemons', Icons.catching_pokemon, '/pokemons'),
+  //biometrics
   MenuItem('Biometrics', Icons.fingerprint, '/biometrics'),
+  //ubicacion
+  MenuItem('Ubicacion', Icons.pin_drop, '/location'),
+  MenuItem('Mapas', Icons.map_outlined, '/maps'),
+  MenuItem('Controlado', Icons.gamepad_outlined, '/controlled-map'),
 ];
 
 

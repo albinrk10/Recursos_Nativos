@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.albinhinostroza.miscelaneos">
-    
-     <!-- Biometrics -->
+
+    <!-- Biometrics -->
     <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
-    
-      <!-- internet -->
+
+    <!-- internet -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <!-- Permissions options for the `storage` group -->
@@ -22,6 +22,7 @@
     <uses-permission android:name="android.permission.BODY_SENSORS" />
 
     <application android:label="miscelaneos" android:name="${applicationName}" android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDSdx6FICJ2OksrWPnZ2ucm7WI9Xvop4PY"/>
         <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop" android:theme="@style/LaunchTheme" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode" android:hardwareAccelerated="true" android:windowSoftInputMode="adjustResize">
             <!-- Specifies an Android theme to apply to this Activity as soon as
                  the Android process has started. This theme is visible to the user
@@ -38,7 +39,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http"  />
+                <data android:scheme="http" />
                 <data android:scheme="https" />
                 <!-- TODO -->
                 <data android:host="pokemons-deep-linking.up.railway.app" />
