@@ -10,4 +10,7 @@ sha-256
 cd android
 ./gradlew signingReport
 '''
-
+# Para la web deep linking
+'''
+https://github.com/albinrk10/deep-linking-website
+'''
