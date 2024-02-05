@@ -1,4 +1,4 @@
-# miscelaneos
+# Miscelaneos
 
 # Cambiar el nombre del paquete de la aplicación Flutter
 ```
